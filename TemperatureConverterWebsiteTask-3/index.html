@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="/TemperatureConverterWebsiteTask-3/style.css">
+
+    <script src="/TemperatureConverterWebsiteTask-3/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="c1">
+            <h4 class="heading">Temperature Conversion</h4>
+            <form action="action.php">
+                <div class="block">
+                    <div class="b1">
+                        <label for="value">Enter Value To Convert:</label>
+                        <input type="text" name="value" placeholder="0" id="inputvalue">
+                    </div>
+                    <div class="b2">
+                        <label for="">From:</label>
+                        <select name="input" id="input">
+                        <option value="celsius">Celsius (&deg;C)</option>
+                        <option value="fahrenheit">Fahrenheit (&deg;F)</option>
+                        <option value="kelvin">Kelvin (&deg;K)</option>
+                    </select>
+                    </div>
+                    <div class="b2">
+                        <label for="">To:</label>
+                        <select name="output" id="output">
+                        <option value="celsius">Celsius (&deg;C)</option>
+                        <option value="fahrenheit">Fahrenheit (&deg;F)</option>
+                        <option value="kelvin">Kelvin (&deg;K)</option>
+                    </select>
+                    </div>
+                    <br>
+                    <button type="button" id="clear" class="btn" onclick="reset()">Reset</button>
+                    <button type="button" id="convert" class="btn" onclick="convertTemp()">Convert</button>
+                    <div class="answer">
+                        <label for="answer">Answer:</label>
+                        <input type="text" name="answer" id="answer">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
