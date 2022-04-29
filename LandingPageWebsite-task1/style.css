@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin: 0 0;
+}
+
+body {
+    margin: 0px 30px;
+    padding: 12px 10px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.con {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    animation: animate 15s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        background-image: url(/LandingPageWebsite-task1/img/6.jpg)
+    }
+    50% {
+        background-image: url(/LandingPageWebsite-task1/img/1.png)
+    }
+    75% {
+        background-image: url(/LandingPageWebsite-task1/img/4.jpg)
+    }
+}
+
+.b {
+    cursor: pointer;
+    float: right;
+    margin: -40px 30px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 60px;
+    width: 105px;
+    height: 40px;
+    font-size: medium;
+    transition-duration: 0.5s;
+}
+
+.b:hover {
+    background-color: rgba(73, 253, 49, 0.705);
+}
+
+nav {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    float: left;
+    margin: 10px 10px;
+    font-size: large;
+}
+
+.read {
+    cursor: pointer;
+    font-size: 25px;
+    color: aliceblue;
+    text-shadow: -1px 0px 3px black;
+    background: rgba(185, 185, 185, 0.5);
+    border-radius: 7px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 10px 10px;
+    padding: 0px 10px;
+    font-size: larger;
+    transition-duration: 0.3s;
+}
+
+nav a:hover {
+    color: rgb(39, 167, 0);
+    text-decoration: underline;
+}
+
+.container1 {
+    position: absolute;
+    margin: 0px 15px;
+    padding: 0px 80px;
+    top: 45%;
+    text-align: center;
+    right: 36em;
+}
+
+.block1 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heading {
+    font-size: 2em;
+}
+
+.para {
+    line-height: 28px;
+    color: rgb(17, 17, 17);
+    text-shadow: 0px 0px 10px black;
+}
+
+#btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    margin: 20px 30px;
+    font-size: medium;
+    border-radius: 25px;
+    transition-duration: 0.7s;
+    background: -webkit-linear-gradient(0deg, transparent 50%, lightgreen 50%);
+    background-size: 400px 80px;
+}
+
+#btn:hover {
+    background-position: 200px 0;
+    color: whitesmoke;
+}
+
+.container2 {
+    float: right;
+    text-align: center;
+    border-radius: 15px;
+    padding: 35px 60px;
+    margin-top: 65px;
+    background: rgba(103, 169, 189, 0.5);
+    margin-right: 20px;
+}
+
+.form-group input {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 26em;
+    height: 35px;
+    text-align: center;
+    margin: 7px;
+}
